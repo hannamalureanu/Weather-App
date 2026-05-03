@@ -38,4 +38,32 @@ Aplicație web completă care furnizează date meteo actuale și prognoză pe 5 
 
 ---
 
-## 📦 Structura proiectului
+## 📂 Structura proiectului
+
+Proiectul este organizat în două părți principale: backend (Python) și frontend (React).
+
+- **backend/** – aici se află serverul Flask, fișierul cu cheia API, dependințele Python și istoricul salvat.
+- **frontend/** – aici este interfața aplicației, componentele React, stilurile și configurațiile.
+- **.gitignore** – ascunde fișierele care nu trebuie încărcate pe GitHub (de exemplu, mediul virtual, modulele Node, cheia secretă).
+- **README.md** – acest fișier.
+
+În backend vei găsi:
+- `app.py` – codul principal al serverului
+- `.env` – fișierul tău secret cu cheia API (nu se încarcă pe GitHub)
+- `.env.example` – un exemplu pentru alți utilizatori
+- `requirements.txt` – lista cu toate bibliotecile Python necesare
+- `history.csv` – se creează automat după primele căutări
+
+În frontend vei găsi:
+- `src/App.js` – componenta principală
+- `src/App.css` – stilurile pentru temă light/dark
+- `src/MapComponent.jsx` – harta interactivă
+- `src/ThemeContext.js` – gestionarea temei și persistenta în localStorage
+- `public/` – fișiere statice
+- `package.json` – dependințele React
+
+---
+
+```bash
+git clone https://github.com/hannamalureanu/Weather-App.git
+cd Weather-App
