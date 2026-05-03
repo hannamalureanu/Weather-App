@@ -63,7 +63,3 @@ Proiectul este organizat în două părți principale: backend (Python) și fron
 - `package.json` – dependințele React
 
 ---
-
-```bash
-git clone https://github.com/hannamalureanu/Weather-App.git
-cd Weather-App
